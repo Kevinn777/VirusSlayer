@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Virus Slayer</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    </head>
+    <body>
+        <div id="home-screen">
+            <div class="logo">
+                <img src="./images/virus-logo.png" alt="" />
+                <p>Virus Slayer</p>
+            </div>
+
+            <div class="speed-handle">
+                <p>select speed</p>
+
+                <div class="speed-content">
+                    <a href="#" class="speed-item speed-item-selected">1x</a>
+                    <a href="#" class="speed-item">2x</a>
+                    <a href="#" class="speed-item">3x</a>
+                </div>
+            </div>
+
+            <div class="username-handle">
+                <input
+                    type="text"
+                    placeholder="What Your Name?"
+                    id="username"
+                />
+                <a href="#" id="play-btn">Play</a>
+            </div>
+
+            <div class="helper">
+                <a href="#" id="instruction">Instruction</a>
+                <a href="#" id="about">About</a>
+            </div>
+
+            <div class="instruction-section" id="instruction-section">
+                <h1>Instruction</h1>
+
+                <div class="instruction-content">
+                    <p>
+                        1. Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. A minus esse obcaecati dicta! Eaque repellendus
+                        aliquam eligendi voluptatibus eveniet quidem?
+                    </p>
+                    <p>
+                        2. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Aliquam sapiente libero facilis, hic laborum
+                        quaerat labore corporis. Recusandae ea ullam totam, ut
+                        sit voluptas debitis soluta perferendis laboriosam
+                        consequuntur commodi!
+                    </p>
+                    <p>
+                        3. Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Veniam, molestiae?
+                    </p>
+                </div>
+
+                <a href="#" id="close-instruction">Back Home</a>
+            </div>
+
+            <div class="about-section" id="about-section">
+                <h1>About Virus Slayer</h1>
+
+                <div class="about-content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Voluptatem perspiciatis culpa dicta rem, aperiam
+                        laboriosam iste deleniti mollitia tenetur corporis
+                        exercitationem magnam odit sit. Enim vel nemo fugiat
+                        doloremque odio.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Minima officiis magni consequuntur odit
+                        repudiandae inventore qui necessitatibus natus dolore
+                        ad, ducimus quibusdam recusandae aut commodi ipsam esse,
+                        molestiae dicta. Ex error fugiat excepturi consequatur.
+                        Distinctio, nobis illum rem accusamus rerum qui
+                        laboriosam impedit fugiat expedita soluta, cupiditate
+                        sunt, dicta aut.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nulla, quisquam et? Suscipit tenetur itaque qui sunt
+                        aspernatur neque ea nesciunt excepturi nisi atque ipsa
+                        repellat hic nulla possimus, minima quaerat non
+                        delectus! Nobis culpa asperiores non cum explicabo,
+                        voluptatum fuga commodi laudantium exercitationem id
+                        quidem error aliquam in dolore! Aliquam cupiditate vel
+                        ullam voluptates tempora! Modi maiores facilis minus
+                        esse!
+                    </p>
+                </div>
+
+                <a href="#" id="close-about">Back Home</a>
+            </div>
+        </div>
+
+        <div id="game-screen">
+            <div class="piano">
+                <div class="hit-container">
+                    <div class="hit-combo"></div>
+                    <div class="hit-accuracy"></div>
+                </div>
+
+                <div class="track-container">
+                
+                </div>
+
+                <div class="danger-area"></div>
+
+                <div class="border-point"></div>
+
+                <div class="key-container">
+                    <div class="key">
+                        <div class="keypress"></div>
+                        <span>D</span>
+                    </div>
+
+                    <div class="key">
+                        <div class="keypress"></div>
+                        <span>F</span>
+                    </div>
+
+                    <div class="key">
+                        <div class="keypress"></div>
+                        <span>J</span>
+                    </div>
+
+                    <div class="key">
+                        <div class="keypress"></div>
+                        <span>K</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="board">
+                <div class="in-game-board">
+                    <div id="timer"></div>
+                    <div id="score"></div>
+                    <div id="fail"></div>
+                    <div id="username-result"></div>
+                </div>
+
+                <div class="result-board">
+                    <h1 class="result-header"></h1>
+
+                    <div class="result-info">
+                        <div id="username-result-board"></div>
+                        <div class="PERFECT"></div>
+                        <div class="GOOD"></div>
+                        <div class="BAD"></div>
+                        <div class="MISS"></div>
+                        <div class="max-combo"></div>
+                        <div id="score-result"></div>
+                    </div>
+
+                    <a href="#" id="play-again">Play Again</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="script/song.js"></script>
+        <script src="script/script.js"></script>
+    </body>
+</html>
